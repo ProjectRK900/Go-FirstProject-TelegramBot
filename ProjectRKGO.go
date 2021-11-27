@@ -58,8 +58,8 @@ type wallet map[string]float64 // тип "кошелёк" для ID чата
 var db = map[int64]wallet{} // "БД"
 
 func main() { // Главная функция
-	bot, err := tgbotapi.NewBotAPI("2122826174:AAFjV_ISH_sdE2Oi0hWwFUpTeuuNbV8kugw") // API бота
-	if err != nil {                                                                  // обработка ошибки
+	bot, err := tgbotapi.NewBotAPI(*Bot's key*) 	// API бота (key is a secret)
+	if err != nil {                                 // обработка ошибки
 		log.Panic(err)
 	}
 
